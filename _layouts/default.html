@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    {% if page.custom_styles %}
+      <link rel="stylesheet" href="/assets/css/{{page.custom_styles}}.css">
+    {% endif %}
+  </head>
+  <body>
+    {{ content }}
+    {% include navigation.html %}
+  </body>
+</html>
