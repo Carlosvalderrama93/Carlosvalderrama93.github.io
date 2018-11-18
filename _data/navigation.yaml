@@ -4,3 +4,6 @@
 - template: 'about.html'
   uri: 'about'
   name: 'about'
+- template: 'contacto.html'
+  uri: 'contacto-dos'
+  name: 'contacto'
