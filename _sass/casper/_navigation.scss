@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  > div {
+    display: flex;
+  }
+  a {
+    align-items: center;
+    color: $nav__textColor;
+    display: flex;
+    opacity: .8;
+    font-size: 12px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  svg {
+    width: 1rem;
+    fill: currentColor;
+  }
+  .site-nav-logo img {
+    display: block;
+    width: auto;
+    height: 19px;
+  }
+
+  .blog-name {
+    font-weight: 700;
+  }
+  .nav-link {
+    padding: 10px 12px;
+    text-transform: uppercase;
+  }
+  .social-link {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+  }
+}

@@ -1,7 +1,33 @@
-<nav>
-    {% for item in site.data.navigation %}
-      <a href="{{ item.link }}">
-        {{ item.name }}
+{% assign blog = site.data.blog %}
+
+<nav class="site-nav">
+  <div>
+    {% if page.url == '/' %}
+      {% if blog.logo %}
+      <a class="site-nav-logo" href="/">
+        <img src="/assets/img/{{ blog.logo }}" alt="{{ blog.title }}" />
       </a>
+      {% else %}
+      <a class="blog-name nav-link" href="/">{{ site.name }}</a>
+      {% endif %}
+    {% endif %}
+
+    {% if site.data.navigation %}
+      {% for _page in site.data.navigation %}
+        <a class="nav-link" href="{{ _page.uri }}">
+          {{ _page.name }} - {{ page.url }}
+        </a>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  {% if site.data.networks %}
+  <div>
+    {% for _network in site.data.networks %}
+    <a href="{{ _network.url }}" title="{{_network.name}}" class="social-link" target="_blank">
+      {{ _network.svg_icon }}
+    </a>
     {% endfor %}
-  </nav>
+  </div>
+  {% endif %}
+</nav>

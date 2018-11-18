@@ -3,14 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/casper.css">
 
     {% if page.custom_styles %}
       <link rel="stylesheet" href="/assets/css/{{page.custom_styles}}.css">
     {% endif %}
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,700" rel="stylesheet">
+
   </head>
   <body>
-    {{ content }}
-    {% include navigation.html %}
+    <main>
+      {% include header.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </main>
   </body>
 </html>
