@@ -1,4 +1,6 @@
-- name: Home
-  link: /
-- name: About
-  link: /about
+- template: 'index.html'
+  uri: '/'
+  name: 'home'
+- template: 'about.html'
+  uri: 'about'
+  name: 'about'

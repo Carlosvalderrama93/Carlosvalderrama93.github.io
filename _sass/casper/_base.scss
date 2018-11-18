@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #000;
+  margin: 0;
+  font: 300 1rem 'Oxygen', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  line-height: 1.15;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
+}

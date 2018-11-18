@@ -1,0 +1,23 @@
+# url:
+
+### logo
+### the url specified for this blog ???
+logo: 'ghost-logo.svg'
+
+### title
+### the blog title
+title: 'cornej'
+
+### description
+### the blog description
+description: 'Thoughts, stories and ideas.'
+
+### logo
+### the image name for the blog logo
+# logo: ''
+
+### cover_image
+### the image name for the blog cover image
+cover_image: 'blog-cover.jpg'
+
+

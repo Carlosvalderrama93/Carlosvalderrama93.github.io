@@ -1,0 +1,22 @@
+{% assign blog = site.data.blog %}
+
+<header class="site-header{%if blog.cover_image%} cover{%endif%}" {% if blog.cover_image %}style="background-image: url(/assets/img/{{site.data.blog.cover_image}})"
+  {% endif %}>
+  <div class="wrapper">
+    {% if page.url == '/' %}
+    <div class="site-header-content">
+      <h1 class="site-{%if blog.logo%}logo{%else%}title{%endif%}">
+        {%if blog.logo%}
+        <img class="site-logo" src="/assets/img/{{blog.logo}}" alt="{{ blog.name}}">
+        {%else%}
+          {{blog.title}}
+        {%endif%}
+      </h1>
+      <h2 class="site-description">Thoughts, stories and ideas. </h2>
+    </div>
+    {%endif%}
+
+    {% include navigation.html %}
+
+  </div>
+</header>

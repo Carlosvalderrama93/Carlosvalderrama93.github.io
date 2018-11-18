@@ -1,3 +1,9 @@
-name: Hank Quinlan, Horrible Cop
 markdown: kramdown
 permalink: /:title:output_ext
+
+name: 'cornej.com'
+
+networks:
+  - network: 'facebook'
+  - network: 'twitter'
+  - network: 'google+'
